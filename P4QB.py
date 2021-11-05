@@ -1,8 +1,5 @@
 # infra-es-do-flash
-Prova de LÓGICA DE PROGRAMAÇÃO, assunto, listas.
-
-O Flash resolveu tirar férias no Brasil e passou a treinar nas nossas belíssimas
-estradas. Durante suas voltas matinais, ele quebrou centenas de limites de velocidade
+'''
 informados em placas de trânsito e não consegue se lembrar de todos, já que algumas
 placas estavam mal sinalizadas ou obstruídas e ele não é conhecido por ter uma super
 memória.
@@ -18,7 +15,21 @@ placas obstruídas ou bloqueadas.
 Entrada Saída
 5 3
 10 20 30 0 50
-20 30 50
 6 2
 80 50 0 0 0 0
 80 50
+'''
+r,c=input().split()
+r=int(r)
+c=int(c)
+p=list(map(int,input().split()))
+lista=[]
+listar=[]
+lista3=[]
+for i in p:
+    if i>0:
+        lista.append(i)
+listar=lista[::-1]
+lista3=listar[0:c]
+lista3.reverse()
+print(*lista3)
